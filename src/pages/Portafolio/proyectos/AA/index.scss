@@ -1,0 +1,20 @@
+@import "../../../../constants/styles/sizes/index";
+
+
+.AA {
+    width: 100%;
+    height: 100%;
+    background: #fbfbfb;
+
+    .max-width {
+        max-width: $MAX_WIDTH;
+        margin: 0 auto;
+    }
+
+    &__container {
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+    }
+}

@@ -1,0 +1,110 @@
+@import "../../../../constants/styles/sizes/index";
+
+.Anonimo {
+    width: 100%;
+    height: 100%;
+    background: #fbfbfb;
+
+    .max-width {
+        max-width: $MAX_WIDTH;
+        margin: 0 auto;
+    }
+
+    &__container {
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+    }
+
+    &__cine {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 900px;
+
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        position: relative;
+
+        iframe {
+            position: relative;
+            top: -40px;
+            width: 100%;
+            height: 350px;
+        }
+    }
+
+    &__trailer {
+        display: flex;
+        justify-content: space-evenly;
+
+        width: 100%;
+
+        &__card {
+            position: relative;
+
+            width:27%;
+
+            &__fondo {
+                width: 100%;
+            }
+            &__letra {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &__container {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &__perfil {
+        &__nombres {
+            &__fotos {
+                display: flex;
+                justify-content: space-evenly;
+
+                &__foto {
+                    margin: 10px;
+                    margin-top: 50px;
+
+                    width: 30%;
+                    h2 {
+                        font-family: Chivo;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 20px;
+                        line-height: 131%;
+                        /* or 26px */
+
+                        color: #fe374d;
+                        text-align: center;
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        &__creditos {
+            p > p {
+                margin: 0;
+            }
+        }
+    }
+}

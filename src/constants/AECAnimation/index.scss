@@ -1,0 +1,127 @@
+$AEC_DURATION: 1s;
+
+.aec-scroll {
+    overflow-x: hidden;
+}
+
+.aec-e {
+    animation-iteration-count: 1;
+    animation-duration: $AEC_DURATION;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+//----Fade In
+
+@keyframes aec-anim-fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.aec-fade-in {
+    opacity: 0;
+}
+
+.aec-fade-in-into-view {
+    animation-name: aec-anim-fade-in;
+}
+
+//----Fade up
+
+.aec-fade-up {
+    position: relative;
+    top: 100px;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    opacity: 0;
+}
+
+@keyframes aec-anim-fade-up {
+    0% {
+        top: 100px;
+        opacity: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.aec-fade-up-into-view {
+    animation-name: aec-anim-fade-up;
+}
+
+//----Fade dowm
+
+.aec-fade-down {
+    position: relative;
+    bottom: 100px;
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes aec-anim-fade-down {
+    0% {
+        bottom: 100px;
+        opacity: 0;
+    }
+    100% {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+.aec-fade-down-into-view {
+    animation-name: aec-anim-fade-down;
+}
+
+//----Fade left
+
+.aec-fade-left {
+    position: relative;
+    left: 100px;
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes aec-anim-fade-left {
+    0% {
+        left: 100px;
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+.aec-fade-left-into-view {
+    animation-name: aec-anim-fade-left;
+}
+
+//----Fade right
+
+.aec-fade-right {
+    position: relative;
+    right: 100px;
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes aec-anim-fade-right {
+    0% {
+        right: 100px;
+        opacity: 0;
+    }
+    100% {
+        right: 0;
+        opacity: 1;
+    }
+}
+
+.aec-fade-right-into-view {
+    animation-name: aec-anim-fade-right;
+}

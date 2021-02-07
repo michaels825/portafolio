@@ -1,0 +1,62 @@
+.Contact {
+    width: 100%;
+    height: 100%;
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        height: 100%;
+
+        &__informacion {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &__lest {
+                color: #ffbc0a;
+                font-size: 11em; 
+                font-family: "Qanelas Soft DEMO";
+                font-style: normal;
+                font-weight: 800;
+                line-height: 231px;
+                &__talk {
+                    font-family: "Qanelas Soft DEMO";
+                    color: transparent;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: 131%;
+                    -webkit-text-stroke: 1px #ffffff;
+                }
+            }
+
+            &__contacto {
+                position: absolute;
+                top: 190px;
+                img {
+                    margin-right: 20px;
+                }
+
+                &__email,
+                &__phone {
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    h2 {
+                        font-family: Coolvetica;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 30px;
+                        letter-spacing: 0.105em;
+                        line-height: 0;
+                        /* or 39px */
+
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}

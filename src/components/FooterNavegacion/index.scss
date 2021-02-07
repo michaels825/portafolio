@@ -1,0 +1,19 @@
+.FooterNavegacion {
+    display: flex;
+
+    background: black;
+
+    &__item{
+        width: 25%;
+        height: 300px;
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        img{
+            width: 100%;
+        }
+    } 
+    
+}

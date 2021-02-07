@@ -1,0 +1,202 @@
+@import "../../constants/styles/sizes/index";
+
+.About {
+    width: 100%;
+    height: 100%;
+
+    .max-width {
+        max-width: $MAX_WIDTH;
+        margin: 0 auto;
+    }
+
+    &__container {
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll; 
+        &::-webkit-scrollbar {
+          //  display: none;
+        }
+
+        .marcador {
+            opacity: 0;
+            position: relative;
+            display: flex;
+            width: 100px;
+            height: 5px;
+            background: #fe374d;
+            &::after {
+                content: "";
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                background: #fe374d;
+                border-radius: 200px;
+                right: 0;
+                top: -13px;
+            }
+            margin-right: 20px;
+        }
+        &__informacion {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 100px 0;
+
+            
+
+            background-attachment: fixed;
+
+            height: 100%;
+
+            &__about {
+                color: #ffbc0a;
+                font-size: 11em;
+                font-family: "Qanelas Soft DEMO";
+                font-style: normal;
+                font-weight: 800;
+                line-height: 151px;
+                &__me {
+                    font-family: "Qanelas Soft DEMO";
+                    color: transparent;
+                    font-style: normal;
+                    font-weight: 800;
+        
+                    -webkit-text-stroke: 1px #ffffff;
+                }
+            }
+
+            &__ilove {
+                font-family: "Qanelas Soft DEMO";
+                color: #ffffff;
+                font-size: 2.5em;
+                margin: 0;
+            }
+        }
+
+        &__sobre {
+            background-color: #080d4a;
+            padding: 50px 0;
+            &__informacion {
+                &__titulo {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    color: white;
+
+                    font-family: Coolvetica;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 45px;
+                    line-height: 131%;
+                    /* or 59px */
+
+                    color: #ffffff;
+                }
+
+                &__descripcion {
+                    display: flex;
+                    &__contenido {
+                        width: 60%;
+                        font-family: Chivo;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 17px;
+                        line-height: 195%;
+                        /* or 27px */
+
+                        text-align: justify;
+                        &__saludo {
+                            color: #fe374d;
+                        }
+
+                        &__info {
+                            color: white;
+                        }
+
+                        padding-left: 125px;
+                    }
+
+                    &__imagen {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 40%;
+                        img {
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__hacer {
+            background-color: #080d4a;
+            padding: 50px 0;
+            &__container {
+                &__titulo {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    color: white;
+
+                    font-family: Coolvetica;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 45px;
+                    line-height: 131%;
+                    /* or 59px */
+
+                    color: #ffffff;
+                }
+
+                &__habilidades {
+                    li {
+                        color: #fe374d;
+                    }
+                }
+            }
+        }
+
+        &__herramientas {
+            background-color: #080d4a;
+            padding: 50px 0;
+            &__container {
+                &__titulo {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    font-family: Coolvetica;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 45px;
+                    line-height: 131%;
+                    /* or 59px */
+
+                    color: #ffffff;
+                }
+
+                &__lista {
+                    display: flex;
+                    justify-content: space-evenly;
+                    margin: 40px 0;
+                    li {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        list-style: none;
+                        transition: all 0.5s ease;
+                        border-radius: 200px;
+                        padding: 10px;
+
+                        &:hover {
+                            background: #080d4a;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,92 @@
+.Preload {
+    width: 100%;
+    height: 100%;
+    background: red;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 100;
+
+    &__img {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 150px;
+        height: 200px;
+
+        z-index: 100;
+
+        &__container {
+            overflow-y: hidden;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@keyframes logo_anim {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+@keyframes logo_anim_back {
+    0% {
+        height: 0%;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+@keyframes logo_anim_back_salida {
+    0% {
+        height: 100%;
+    }
+    100% {
+        height: 0%;
+    }
+}
+
+.anim_logo {
+    animation-name: logo_anim;
+    animation-iteration-count: inherit;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-delay: 1s;
+}
+
+.anim_logo_back {
+    animation-name: logo_anim_back;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.anim_logo_back_salida {
+    animation-name: logo_anim_back_salida;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}

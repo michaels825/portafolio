@@ -1,0 +1,99 @@
+.Header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 12%;
+
+    &.Header__over {
+        position: absolute;
+        z-index: 1;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        margin: 50px 20px;
+        width: 100%;
+        height: 100%;
+
+        /* Small devices (tablets, 768px and up) */
+        @media (min-width: 1280px) {
+            width: 1280px;
+        }
+
+        /* Medium devices (desktops, 992px and up) */
+
+        /* Large devices (large desktops, 1200px and up) */
+
+        &__logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        &__navegacion {
+            display: flex;
+            &__lista {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &__item {
+                    font-family: "Coolvetica";
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    margin: 0 5px;
+                    color: white;
+                    padding: 20px;
+
+                    font-style: normal;
+                    font-weight: normal;
+
+                    line-height: 131%;
+                    /* identical to box height, or 20px */
+
+                    letter-spacing: 0.27em;
+
+                    transition: all 0.5s ease;
+
+                    font-size: 0.8em;
+
+                    @media (max-width: 1280px) {
+                        font-size: 0.8em;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                    &__link {
+                        position: relative;
+
+                        &.select {
+                            &::before {
+                                width: 50%;
+                            }
+                        }
+
+                        &::before {
+                            content: "";
+                            transition: all 0.2s ease;
+
+                            position: absolute;
+                            bottom: -5px;
+                            height: 3px;
+                            width: 0%;
+                            background: #ffbc0a;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

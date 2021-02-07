@@ -1,0 +1,68 @@
+.Portafolio {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    &__container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+
+        position: relative;
+
+        &__lista {
+            /*
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 100% 100%;
+            grid-row: 100%;
+            width: 100%;
+            height: 100%;
+            overflow-y: scroll;
+            */
+
+            .PortafolioView:nth-child(odd) {
+                flex-direction: column-reverse;
+            }
+
+            .PortafolioView:nth-child(even) {
+
+              
+                .PortafolioView__informacion__background {
+                 
+                    top: 0;
+                    bottom: none;
+                }
+            }
+
+            display: grid;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            grid-template-columns: 20% 20% 20% 20% 20%;
+            width: 100%;
+            height: 100%;
+            scroll-snap-type: proximity;
+            scroll-snap-align: center;
+
+            //scroll-behavior: smooth;
+
+            &__scroll {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                overflow-y: scroll;
+                overflow-x: hidden;
+
+                &__barra {
+                    position: relative;
+
+                    // background: black;
+                    z-index: 15;
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}

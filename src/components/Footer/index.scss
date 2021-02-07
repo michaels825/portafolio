@@ -1,0 +1,40 @@
+.Footer {
+    position: fixed;
+    z-index: 100;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    margin: 0 20px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1280px;
+
+        &__name {
+            p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 0.8em;
+                line-height: 131%;
+                /* identical to box height, or 20px */
+
+                letter-spacing: 0.11em;
+                color: white;
+            }
+        }
+        &__redes {
+            img {
+                margin: 0 15px;
+
+                &:hover {
+                    cursor: pointer;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
