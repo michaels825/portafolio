@@ -53,57 +53,79 @@ const Califest = () => {
                 <h3 className="slider__p__subtitulo">Web design</h3>
             </div>
 
-            <div className="max-width padding-v white">
-                <div >
-                    <h1 className="titulo1">THE PROJECT</h1>
-                </div>
-                <p className="parrafo1">Create a mobile app that allows personalization when ordering fast food. Thinking about the different tastes of the person's food, different micro-interactions will be designed, making the choice of ingredients an easier task. The pizza Project’s app is an app that allows to order fast food, such as pizza and pasta. It offers the user the chance to choose their own ingredients, size or order predetermined meals.</p>
+            <div className="padding-v white">
+                <div className="max-width padding-h">
+                    <div style={{ width: "100%", height: "100px" }}></div>
+                    <div >
+                        <h1 className="titulo1">THE PROJECT</h1>
+                    </div>
+                    <p className="parrafo1">Create a mobile app that allows personalization when ordering fast food. Thinking about the different tastes of the person's food, different micro-interactions will be designed, making the choice of ingredients an easier task. The pizza Project’s app is an app that allows to order fast food, such as pizza and pasta. It offers the user the chance to choose their own ingredients, size or order predetermined meals.</p>
 
-                <div className="horizontal-space">
-                    {[
-                        { t: "YEAR", a: "2019" },
-                        { t: "TIME FRAME", a: "3 months" },
-                        { t: "MY ROLE", a: "UI/UX" },
-                        { t: "TAGS", a: "Web design, Ui, Ux" },
-                    ].map((v, k) => {
-                        return <div key={k}>
-                            <h1 className="titulo2">{v.t}</h1>
-                            <h1 className="parrafo1">{v.a}</h1>
-                        </div>
-                    })}
+                    <div className="horizontal-space">
+                        {[
+                            { t: "YEAR", a: "2019" },
+                            { t: "TIME FRAME", a: "3 months" },
+                            { t: "MY ROLE", a: "UI/UX" },
+                            { t: "TAGS", a: "Web design, Ui, Ux" },
+                        ].map((v, k) => {
+                            return <div key={k}>
+                                <h1 className="titulo2">{v.t}</h1>
+                                <h1 className="parrafo1">{v.a}</h1>
+                            </div>
+                        })}
 
+                    </div>
+                    <div style={{ width: "100%", height: "100px" }}></div>
                 </div>
+
             </div>
 
             <div className="pos-img-3">
                 <img src="/img/portafolio/califest/mockup_1.png" />
+
+            </div>
+
+            <div className="pos-img-3 padding-h">
+
                 <img className="space-v" style={{ width: "80%" }} src="/img/portafolio/califest/mockup_2.png" />
             </div>
 
-            <p className="parrafo1 space-v max-width">An illustration will be displayed on the home page along with a call to action to invite people to buy tickets. Later, an advertising banner will be displayed showing the
-            festival experience. The news, description and line up of the event will be
+            <div className="max-width padding-h">
+                <p style={{ color: "white", textAlign: "center" }} className="parrafo7 max-width">An illustration will be displayed on the home page along with a call to action to invite people to buy tickets. Later, an advertising banner will be displayed showing the
+                festival experience. The news, description and line up of the event will be
 displayed on the same page.</p>
 
-            <div className="pos-img-3">
+            </div>
+
+            <div className="pos-img-3  padding-h">
                 <img className="space-v" style={{ width: "80%" }} src="/img/portafolio/califest/historias.png" />
             </div>
 
-            <p className="parrafo1 space-v max-width">In the virtual store, people will be able to filter their products by artist, genre and price. The new collections will be displayed first and then the existing collection.
-In the following interface the price and description of the product will be shown, you will have the option to add it to the cart or to favorites.</p>
+            <div className="max-width padding-h space-v">
 
-            <div className="pos-img-3">
-                <img className="space-v" style={{ width: "80%" }} src="/img/portafolio/califest/landing.png" />
-                <img className="space-v" style={{ width: "80%" }} src="/img/portafolio/califest/tienda.png" />
+                <p style={{ color: "white", textAlign: "center" }} className="parrafo7 max-width">In the virtual store, people will be able to filter their products by artist, genre and price. The new collections will be displayed first and then the existing collection.
+In the following interface the price and description of the product will be shown, you will have the option to add it to the cart or to favorites.</p>
             </div>
 
-            <p className="parrafo1 space-v max-width">On the virtual stage you can go through the entire map of the music festival, exploring the stages where the artists will be present. You will live the experience as if you were really at the festival.</p>
+            <div className="pos-img-3 padding-h">
+                <img style={{ width: "80%", marginBottom: "100px" }} src="/img/portafolio/califest/landing.png" />
+                <img style={{ width: "80%" }} src="/img/portafolio/califest/tienda.png" />
+            </div>
 
-            <div className="pos-img-3">
-                <img className="space-v" style={{ width: "80%" }} src="/img/portafolio/califest/mapa.png" />
+            <div className="max-width padding-h">
+                <p style={{ color: "white", textAlign: "center" }} className="parrafo7 space-v max-width">On the virtual stage you can go through the entire map of the music festival, exploring the stages where the artists will be present. You will live the experience as if you were really at the festival.</p>
+            </div>
+
+
+            <div className="pos-img-3 padding-h">
+                <img style={{ width: "80%" }} src="/img/portafolio/califest/mapa.png" />
                 <img className="space-v" style={{ width: "80%" }} src="/img/portafolio/califest/lugares.png" />
             </div>
 
-            <h1 className="space-v end">THE END</h1>
+            <div className="pos-img-3 padding-h">
+                <img style={{width:"80%", marginBottom:"80px"}} src="/img/portafolio/califest/end.png" />
+
+            </div>
 
             <ScrollModule />
             <FooterNavegacion />

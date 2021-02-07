@@ -39,7 +39,7 @@ const Body = withRouter(({ location }) => {
     return (
         <div className={"Body" + (style.header === "over" ? " Header__over" : "") + (style.body === "max-width" ? " Body__max" : style.body === "width-large" ? " Body__large" : "")}>
             <TransitionGroup className="Body__container">
-                <CSSTransition key={location.key} classNames={style.animSlider === "horizontal" ? "slide" : style.animSlider === "vertical-inverse" ? "slideYI" : "slideY"} timeout={500}>
+                <CSSTransition key={location.key} classNames={style.animSlider === "horizontal" ? "slide" : style.animSlider === "vertical-inverse" ? "slideYI" : "slideY"} timeout={style.animSlider === "horizontal" ? 500 : 0}>
                     <Switch location={location}>
                         <Route exact path={Rlink.PRINCIPAL} component={Principal} />
                         <Route exact path={Rlink.ABOUT} component={About} />

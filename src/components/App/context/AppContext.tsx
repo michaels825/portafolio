@@ -23,7 +23,9 @@ type IUsePageLink = [string,
 
 
 
-interface PreloadProps {
+export interface PreloadProps {
+    active: boolean,
+    pageLink: boolean,
     state: boolean,
     color: number
 }
@@ -53,26 +55,45 @@ export const AppContextProvider = (props: Props<any>) => {
     })
 
     const [preload, setPreload] = useState<PreloadProps>({
+        active: false,
+        pageLink: false,
         state: true,
-        color: 0
+        color: 2
     });
 
     useEffect(() => {
         if (window.location.pathname !== pageLink) {
             let color = preload.color;
+            let preloadTemp = Object.assign({}, preload) as PreloadProps;
+            preloadTemp.pageLink = true;
+            if (preloadTemp.active === true) {
+                if (preloadTemp.color + 1 >= 3) {
+                    preloadTemp.color = 0;
+                } else {
+                    preloadTemp.color++;
+                }
 
-            if (color + 1 >= 3) {
-                color = 0;
+                preloadTemp.state = true;
             }
+            setPreload(preloadTemp);
 
-            color++;
-            setPreload({ color, state: true })
-            setTimeout(() => {
-                history.push(pageLink)
-            }, 1500)
+
+
 
         }
     }, [pageLink])
+
+    useEffect(() => {
+        if (preload.pageLink === true && preload.active === false) {
+
+            let preloadTemp = Object.assign({}, preload) as PreloadProps;
+            preloadTemp.pageLink = false;
+            setPreload(preloadTemp);
+
+            history.push(pageLink)
+
+        }
+    }, [preload])
 
 
     const value = useMemo(() => {

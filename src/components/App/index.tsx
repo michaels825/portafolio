@@ -58,6 +58,7 @@ const Aplication = () => {
 
         // refContainerHTML.appendChild(BackgroundCreateJs());
 
+        /*
         let cursorHTML = document.querySelector(".Cursor") as HTMLDivElement;
         let cursoresHTML = document.querySelectorAll(".Cursor_item") as NodeListOf<HTMLDivElement>;
         let counter = 0;
@@ -83,22 +84,20 @@ const Aplication = () => {
                     c.style.left = (x + i) + "px";
                 }
             })
-            */
         })
-
+        
+        */
 
     }, [])
 
     return <>
-     
         <div className={"App" + (preload.state === true ? " App__hidden" : "")}>
             <div ref={refContainer} className="App__background"></div>
             <div className="App__background"></div>
             <Header />
             <Body />
             <Footer />
-            <div className="Cursor">
-            </div>
+          
         </div>
         <Preload />
     </>

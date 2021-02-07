@@ -62,7 +62,7 @@ const ECompras = () => {
                 <h3 className="slider__p__subtitulo">Ux / ui design</h3>
             </div>
 
-            <div className="max-width padding-v white padding-h">
+            <div className="max-width padding-v padding-h">
                 <div >
                     <h1 className="titulo1">THE PROJECT</h1>
                 </div>
@@ -87,12 +87,12 @@ const ECompras = () => {
 
             </div>
 
-            <div className="max-width padding-v white">
+            <div className="max-width padding-v">
                 <h1 className="titulo1">THE CHALLENGE</h1>
                 <p className="parrafo7 padding-h">Create a more friendly and optimal work platform for Icesi University employees, redesigning the graphic design and interaction with the E-compras platform.</p>
             </div>
 
-            <div className="horizontal space">
+            <div className="horizontal center space-v">
                 {[
                     "/img/portafolio/e_compras/foto_1.png",
                 ].map(((img, i) => {
@@ -100,7 +100,10 @@ const ECompras = () => {
                 }))}
             </div>
 
-            <div className="pos-img-2">
+            <div className="horizontal center">
+                <h1 className="titulo1">PEOPLE</h1>
+            </div>
+            <div className="pos-img-2 padding-h">
                 <img style={{ width: "100%" }} src="/img/portafolio/e_compras/tarjetas.png" />
             </div>
             {/**
@@ -143,7 +146,7 @@ const ECompras = () => {
 
             <div className="space-v">
                 <h1 className="titulo1">FIELDWORK</h1>
-                <div className="pos-img-2">
+                <div className="pos-img-2 padding-h">
                     {
                         [
                             "/img/portafolio/e_compras/consulta_1.png",
@@ -158,22 +161,24 @@ const ECompras = () => {
                     }
                 </div>
 
-                <div className="pos-img-3">
-                    <img src="/img/portafolio/e_compras/flujo.png" />
-                    <img style={{ width: "85%" }} src="/img/portafolio/e_compras/colores.png" />
-                    <img src="/img/portafolio/e_compras/pruebas_usuarios.png" />
-                    <img style={{ width: "80%" }} src="/img/portafolio/e_compras/mockup_1.png" />
-                    <p className="max-width parrafo1 padding-h">With the new E-compras the applicant has new functions that adapt to his needs: help information when creating a new application, saving frequent requests in Favorites and Home with a clear and orderly inbox.</p>
-                    <div>
+                <div className="pos-img-3 ">
+                    <img className="padding-h space-v-min" src="/img/portafolio/e_compras/flujo.png" />
+                    <img className="padding-h space-v-min" src="/img/portafolio/e_compras/colores.png" />
+                    <img className="space-v-min" src="/img/portafolio/e_compras/pruebas_usuarios.png" />
+                    <img className="padding-h space-v-min" style={{ width: "80%" }} src="/img/portafolio/e_compras/mockup_1.png" />
+                    <p className="max-width parrafo7 padding-h">With the new E-compras the applicant has new functions that adapt to his needs: help information when creating a new application, saving frequent requests in Favorites and Home with a clear and orderly inbox.</p>
+                    <div className="padding-h">
                         <img src="/img/portafolio/e_compras/mockup_2.png" />
 
                     </div>
                 </div>
 
 
-                <h1 className="letra-full min" style={{ color: "#00C7FF" }}>VIDEO</h1>
-                <div className="space-v"></div>
-                <h1 className="end">THE END</h1>
+
+                <div className="pos-img-2 space-v-min">
+                    <img src="/img/portafolio/e_compras/end.png"  />
+                </div>
+               
             </div>
 
 

@@ -60,7 +60,7 @@ const ThePizzaProject = () => {
                 <h3 className="slider__p__subtitulo">Delivery app concept</h3>
             </div>
 
-            <div className="max-width padding-v padding-h">
+            <div className="max-width padding-v padding-h space-v">
                 <div >
                     <h1 className="titulo1">THE PROJECT</h1>
                 </div>
@@ -86,9 +86,9 @@ const ThePizzaProject = () => {
                 <img src="/img/portafolio/the_pizza_proyect/celular_1.png" />
             </div>
 
-            <div className="max-width horizontal space-v">
+            <div className="max-width horizontal space-v padding-h">
                 <div>
-                    <img src="/img/portafolio/the_pizza_proyect/comentarios.png" />
+                    <img className="radio" src="/img/portafolio/the_pizza_proyect/comentarios.png" />
                 </div>
                 <div>
                     <h1 className="titulo1">FIELDWORK</h1>
@@ -97,25 +97,24 @@ const ThePizzaProject = () => {
             </div>
 
             <div className="pos-img-3">
-                <img className="space-v" style={{ width: "90%" }} src="/img/portafolio/the_pizza_proyect/wiframes.png" />
-                <img className="space-v" style={{ width: "90%" }} src="/img/portafolio/the_pizza_proyect/colores.png" />
+                <img className="space-v radio" style={{ width: "90%" }} src="/img/portafolio/the_pizza_proyect/wiframes.png" />
+                <img className="space-v radio" style={{ width: "90%" }} src="/img/portafolio/the_pizza_proyect/colores.png" />
             </div>
 
-            <div className="pos-img-2">
-                <img src="/img/portafolio/the_pizza_proyect/mockup_pizza_1.png" />
-                <img src="/img/portafolio/the_pizza_proyect/mockup_pizza_2.png" />
+            <div className="horizontal padding-h center">
+                <img src="/img/portafolio/the_pizza_proyect/mockup_pizza_0.png" />
             </div>
 
-            <div className="horizontal max-width center-v">
+            <div className="horizontal center max-width center-v space-v">
                 <img src="/img/portafolio/the_pizza_proyect/mockup_pizza_3.png" />
-                <p className="parrafo1">When your first time open this app you will get both sign up and login options, otherwise it will show sing up and login screens. </p>
+
             </div>
 
             <div className="pos-img-3">
                 <img src="/img/portafolio/the_pizza_proyect/mockup_4.png" />
             </div>
 
-            <div className="pos-img-2">
+            <div className="pos-img-6">
                 <img src="/img/portafolio/the_pizza_proyect/mockup_5.png" />
                 <img src="/img/portafolio/the_pizza_proyect/mockup_6.png" />
                 <img src="/img/portafolio/the_pizza_proyect/mockup_7.png" />
@@ -124,7 +123,12 @@ const ThePizzaProject = () => {
                 <img src="/img/portafolio/the_pizza_proyect/mockup_10.png" />
             </div>
 
-            <h1 className="space-v end">THE END</h1>
+
+            <div className="pos-img-3 space-v-min padding-h">
+                <img  src="/img/portafolio/the_pizza_proyect/end.png" />
+            </div>
+
+         
             <ScrollModule />
 
             <FooterNavegacion />

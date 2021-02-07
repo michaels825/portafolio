@@ -65,27 +65,32 @@ const Portafolio = () => {
         <div className="Portafolio__container">
             <div ref={refLista} className="Portafolio__container__lista" >
                 <PortafolioView
+                    n={1}
                     img="/img/portafolio/preview/yuaatsapiyaa.png"
                     titulo="Yu’ a atsa piya’a"
                     info="Language learning game"
                     link={PortafolioPages.yu_a_atsa_piya_a} />
                 <PortafolioView
+                    n={2}
                     img="/img/portafolio/preview/anonimo.png"
                     titulo="Anonimo"
                     info="Short film"
                     link={PortafolioPages.anonimo} />
                 <PortafolioView
+                    n={3}
                     img="/img/portafolio/preview/ecompras.png"
                     titulo="E Compras"
                     info="Ux / ui design"
                     link={PortafolioPages.e_compras} />
                 <PortafolioView
+                    n={4}
                     img="/img/portafolio/preview/pizza.png"
                     titulo={<>The<br />Pizza<br />Project</>}
                     info="Mobile app"
                     link={PortafolioPages.the_pizza_project} />
 
                 <PortafolioView
+                    n={5}
                     img="/img/portafolio/preview/califest.png"
                     titulo="Califest"
                     info="Web design"

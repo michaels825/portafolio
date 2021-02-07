@@ -3,17 +3,23 @@
 
     background: black;
 
-    &__item{
+    &__item {
         width: 25%;
         height: 300px;
 
         background-repeat: no-repeat;
         background-position: center;
-        background-size: cover;
+        background-size: 100%;
 
-        img{
+        transition: all .5s ease;
+
+        img {
             width: 100%;
         }
-    } 
-    
+
+        &:hover {
+            cursor: pointer;
+            background-size: 120%;
+        }
+    }
 }

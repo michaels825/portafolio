@@ -3,6 +3,7 @@ import "./index.scss";
 import { PortafolioPages } from '../../pages/Portafolio/index';
 import AppContext from '../App/context/AppContext';
 import Rlink from '../../constants/Routes/Rlink';
+import { PreloadProps } from '../App/context/AppContext';
 
 const FooterNavegacion = () => {
 
@@ -52,14 +53,9 @@ const FooterNavegacion = () => {
 
     return <div className="FooterNavegacion">
         {paginas.map((t, i) => {
-            return <div key={i}
-                className="FooterNavegacion__item"
-                style={{ backgroundImage: `url('${t.img}')` }}
-                onClick={() => {
-                    setPageLink(t.link)
-                }}>
-                {/** */}
-            </div>
+            return <ItemNav key={i} t={t} i={i} />
+
+
         })}
 
 
@@ -67,3 +63,53 @@ const FooterNavegacion = () => {
 }
 
 export default FooterNavegacion;
+
+const ItemNav = ({ t, i }: {
+    t: {
+        img: string;
+        link: string;
+    },
+    i: number
+}) => {
+    const { useStyle, usePageLink, usePreload } = AppContext.Consumer();
+    const [, setPageLink] = usePageLink();
+    const [style, setStyle] = useStyle();
+    const [changeAnim, setChangeAnim] = useState<boolean | undefined>(undefined);
+    const [hover, setHover] = useState(false);
+
+    const [preload, setPreload] = usePreload();
+
+    const onClick = () => {
+        if (changeAnim !== undefined) {
+            let styleTemp = Object.assign({}, style);
+            styleTemp.animSlider = "vertical";
+            setStyle(styleTemp);
+            setChangeAnim(true)
+        }
+    }
+
+    useEffect(() => {
+        if (changeAnim === true) {
+            let preloadTemp = Object.assign({}, preload) as PreloadProps;
+            preloadTemp.active = true;
+            setPreload(preloadTemp);
+        }
+    }, [changeAnim])
+
+    useEffect(() => {
+        if (changeAnim === true && preload.active === true) {
+            setPageLink(t.link)
+        }
+    }, [preload])
+
+    useEffect(() => {
+        setChangeAnim(false);
+    }, [])
+
+    return <div key={i}
+        className="FooterNavegacion__item"
+        style={{ backgroundImage: `url('${t.img}')` }}
+        onClick={onClick}>
+    </div>
+
+}

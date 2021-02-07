@@ -115,7 +115,7 @@ const Anonimo = () => {
 
                 </div>
 
-                <div style={{marginTop:"150px"}} className="max-width padding-h">
+                <div style={{ marginTop: "150px" }} className="max-width padding-h">
 
                     <p className="parrafo7" style={{ color: "#FFBC0A", textAlign: "center" }}>According with the title of the film and to respect the privacy, the characters do not use their names. They are anonymous. There are 3 main location, the beach, the mall and the forest.</p>
                 </div>
@@ -201,8 +201,8 @@ const Anonimo = () => {
                     </div>
                 </div>
 
-                <div className="pos-img-2 ">
-                    <img style={{ width: "60%" }} src="/img/portafolio/anonimo/gracias.png" />
+                <div className="pos-img-2 padding-v">
+                    <img style={{ width: "60%", marginTop:"40px", marginBottom:"100px" }} src="/img/portafolio/anonimo/gracias.png" />
                 </div>
 
 
