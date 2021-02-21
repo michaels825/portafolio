@@ -1,7 +1,21 @@
 .FooterNavegacion {
+    position: relative;
     display: flex;
 
     background: black;
+
+    &__titulo {
+        position: absolute;
+        padding: 20px 100px;
+        top:-130px; 
+        font-family: Qanelas Soft DEMO;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 15px;
+      
+
+        color: #fe374d;
+    }
 
     &__item {
         width: 25%;
@@ -11,7 +25,7 @@
         background-position: center;
         background-size: 100%;
 
-        transition: all .5s ease;
+        transition: all 0.5s ease;
 
         img {
             width: 100%;

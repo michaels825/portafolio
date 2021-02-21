@@ -111,6 +111,10 @@ $AEC_DURATION: 1s;
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
+.aec-fade-right-into-view {
+    animation-name: aec-anim-fade-right;
+}
+
 @keyframes aec-anim-fade-right {
     0% {
         right: 100px;
@@ -122,6 +126,196 @@ $AEC_DURATION: 1s;
     }
 }
 
-.aec-fade-right-into-view {
-    animation-name: aec-anim-fade-right;
+//----------------------
+.aec-jump-in-right {
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.aec-jump-in-right-into-view {
+    animation-name: aec-anim-jump-in-right;
+}
+
+@keyframes aec-anim-jump-in-right {
+    0% {
+        transform: scale3d(0.5, 0.5, 0.5);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale3d(1.2, 1.2, 1.2) rotate(-10deg);
+    }
+    70% {
+        transform: scale3d(0.9, 0.9, 0.9) rotate(5deg);
+    }
+    90% {
+        transform: scaleX(1) rotate(0deg);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+//----------------------
+.aec-jump-in-left {
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.aec-jump-in-left-into-view {
+    animation-name: aec-anim-jump-in-left;
+}
+
+@keyframes aec-anim-jump-in-left {
+    0% {
+        transform: scale3d(0.5, 0.5, 0.5);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale3d(1.2, 1.2, 1.2) rotate(10deg);
+    }
+    70% {
+        transform: scale3d(0.9, 0.9, 0.9) rotate(-5deg);
+    }
+    90% {
+        transform: scaleX(1) rotate(0deg);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+//------------
+
+.aec-pop-in-bottom {
+}
+
+.aec-pop-in-bottom-into-view {
+    animation-name: aec-anim-pop-in-bottom;
+}
+
+@keyframes aec-anim-pop-in-bottom {
+    0% {
+        transform: translate3d(0, 100px, 0) scale3d(0.1, 0.1, 0.1);
+    }
+    40% {
+        opacity: 1;
+        animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+        transform: translateZ(0) scale3d(1.08, 1.08, 1.08);
+    }
+    60% {
+        animation-timing-function: ease-in-out;
+        transform: translateZ(0) scaleX(1);
+    }
+    80% {
+        animation-timing-function: ease-in-out;
+        transform: translateZ(0) scale3d(1.03, 1.03, 1.03);
+    }
+    100% {
+        opacity: 1;
+        animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        transform: translateZ(0) scaleX(1);
+    }
+}
+
+//--------------------
+
+.aec-fade-in-right {
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.aec-fade-in-right-into-view {
+    animation-name: aec-anim-fade-in-right;
+}
+
+@keyframes aec-anim-fade-in-right {
+    0% {
+        transform: translate3d(100px, 0, 0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+//--------------------
+
+.aec-fade-in-left {
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.aec-fade-in-left-into-view {
+    animation-name: aec-anim-fade-in-left;
+}
+
+@keyframes aec-anim-fade-in-left {
+    0% {
+        transform: translate3d(-100px, 0, 0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+//--------------------
+
+.aec-fade-in-bottom {
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.aec-fade-in-bottom-into-view {
+    animation-name: aec-anim-fade-in-bottom;
+}
+
+@keyframes aec-anim-fade-in-bottom {
+    0% {
+        transform: translate3d(0, 100px, 0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+    100% {
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+//--------------------
+
+.aec-spin-in {
+}
+
+.aec-spin-in-into-view {
+    animation-name: aec-anim-spin-in;
+}
+
+@keyframes aec-anim-spin-in {
+    0% {
+        animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+        transform: rotate(0deg) scale3d(0, 0, 0);
+        transform-origin: center center;
+    }
+
+    50% {
+        opacity: 1;
+    }
+    70% {
+        transform: rotate(380deg) scaleX(1);
+        transform-origin: center center;
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(1turn) scaleX(1);
+        transform-origin: center center;
+    }
 }

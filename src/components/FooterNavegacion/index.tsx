@@ -52,15 +52,20 @@ const FooterNavegacion = () => {
 
     }, [])
 
-    return <><div className="FooterNavegacion">
-        {paginas.map((t, i) => {
-            return <ItemNav key={i} t={t} i={i} />
+    return <>
+
+        <div className="FooterNavegacion">
+            <div className="FooterNavegacion__titulo">
+                <h1>Check out<br /> more projects</h1>
+            </div>
+            {paginas.map((t, i) => {
+                return <ItemNav key={i} t={t} i={i} />
 
 
-        })}
+            })}
 
 
-    </div>
+        </div>
         <Footer position="normal" />
     </>
 }

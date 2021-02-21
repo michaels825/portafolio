@@ -83,7 +83,7 @@ const YuAAtsaPiyaA = () => {
                         Colombia is one the most culturally diverse countries, for that reason the preservation of a language it’s a really important task for us. The community itself recognize the low engagement showed by its students to learn Nasa Yuwe. The Spanish language, technological changes and the proximity to western society have affected the use and learning of this ancestral language.</p>
                 </div>
             </div>
-            <div className="max-width horizontal space-v padding-h">
+            <div className="max-width horizontal space-v padding-h aec-e aec-jump-in-right">
                 <p className="parrafo5" style={{ fontSize: "40px" }}>“The real concern it’s the preservation of a language, centuries of history and the community core”
 </p>
             </div>
@@ -99,17 +99,17 @@ const YuAAtsaPiyaA = () => {
 </p>
             </div>
 
-            <div className="pos-img-3">
+            <div className="pos-img-3 aec-e aec-pop-in-bottom">
                 <img style={{ width: "80%" }} src="/img/portafolio/yu_a_atsa_piya_a/nino4.png" alt="" />
             </div>
 
-            <div className="max-width">
+            <div className="max-width aec-e aec-jump-in-left">
                 <p className="parrafo6 space-v padding-h">
                     One of the most important activities that we made in field was draw with the kids, we wanted to get how the identify themselves, how they see each other, how they draw their house, the colors they use and every single aspect that we can find to elaborate and create something that really represents the community.
                 </p>
             </div>
 
-            <div className="max-width pos-img-2">
+            <div className="max-width pos-img-2 aec-e aec-fade-in">
                 <img style={{ width: "80%" }} src="/img/portafolio/yu_a_atsa_piya_a/dibujo5.png" alt="" />
             </div>
 
@@ -131,15 +131,19 @@ const YuAAtsaPiyaA = () => {
             </div>
 
 
-            <div className="max-width">
+            <div className="max-width aec-e aec-jump-in-right">
 
                 <p className="parrafo5 padding-h">
                     “We realized different important points for the development of the game, among which the family, the animals and the environment”</p>
             </div>
 
-            <div className="max-width pos-img-4">
+            <div className="max-width pos-img-4 aec-e aec-fade-in-left">
                 <img style={{ alignSelf: "auto" }} src="/img/portafolio/yu_a_atsa_piya_a/wacom-2.png" alt="" />
+            </div>
+            <div className="max-width pos-img-4 aec-e aec-fade-in-right">
                 <img style={{ alignSelf: "flex-end" }} src="/img/portafolio/yu_a_atsa_piya_a/wacom-4.png" alt="" />
+            </div>
+            <div className="max-width pos-img-4 aec-e aec-fade-in-bottom">
                 <img style={{ alignSelf: "center" }} src="/img/portafolio/yu_a_atsa_piya_a/wacom-3.png" alt="" />
             </div>
 
@@ -162,7 +166,8 @@ const YuAAtsaPiyaA = () => {
 
             <div className="space-v">
 
-                <AwesomeSlider className="slider-4">
+                <AwesomeSlider className="slider-4"
+                organicArrows={false} >
                     {[
                         "/img/portafolio/yu_a_atsa_piya_a/slider2/0.jpg",
                         "/img/portafolio/yu_a_atsa_piya_a/slider2/1.jpg",
@@ -193,15 +198,15 @@ const YuAAtsaPiyaA = () => {
                </p>
             </div>
 
-            <div className="horizontal center aec-e aec-fade-in">
+            <div className="horizontal space-v center aec-e aec-fade-in">
                 <img width="50%" src="/img/portafolio/yu_a_atsa_piya_a/gracias.png" alt="" />
             </div>
 
-           
+
             <ScrollModule />
 
             <FooterNavegacion />
-            
+
         </div>
 
     </div>

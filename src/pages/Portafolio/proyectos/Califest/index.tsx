@@ -59,19 +59,19 @@ const Califest = () => {
                     <div >
                         <h1 className="titulo1">THE PROJECT</h1>
                     </div>
-                    <p className="parrafo1">Create a mobile app that allows personalization when ordering fast food. Thinking about the different tastes of the person's food, different micro-interactions will be designed, making the choice of ingredients an easier task. The pizza Project’s app is an app that allows to order fast food, such as pizza and pasta. It offers the user the chance to choose their own ingredients, size or order predetermined meals.</p>
+                    <p className="parrafo1 center">Create a mobile app that allows personalization when ordering fast food. Thinking about the different tastes of the person's food, different micro-interactions will be designed, making the choice of ingredients an easier task. The pizza Project’s app is an app that allows to order fast food, such as pizza and pasta. It offers the user the chance to choose their own ingredients, size or order predetermined meals.</p>
 
-                    <div className="horizontal-space">
+                    <div className="horizontal-space wrap">
                         {[
                             { t: "YEAR", a: "2019" },
                             { t: "TIME FRAME", a: "3 months" },
                             { t: "MY ROLE", a: "UI/UX" },
                             { t: "TAGS", a: "Web design, Ui, Ux" },
                         ].map((v, k) => {
-                            return <div key={k}>
-                                <h1 className="titulo2">{v.t}</h1>
-                                <h1 className="parrafo1">{v.a}</h1>
-                            </div>
+                            return <div className="w3 vertical center" key={k}>
+                            <h1 className="titulo2">{v.t}</h1>
+                            <h1 className="parrafo1 center">{v.a}</h1>
+                        </div>
                         })}
 
                     </div>

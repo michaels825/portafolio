@@ -53,7 +53,7 @@ const Anonimo = () => {
     }, [onLoad])
 
     return <div className="Anonimo">
-        <div className="Anonimo__container">
+        <div className="Anonimo__container aec-scroll">
             <div className="slider__p" style={{ backgroundImage: "url('/img/portafolio/anonimo/portada.png')" }}>
                 <h1 className="slider__p__titulo">ANONIMO</h1>
                 <h3 className="slider__p__subtitulo">Short film</h3>
@@ -63,18 +63,18 @@ const Anonimo = () => {
                 <div>
                     <h1 className="titulo1">THE PROJECT</h1>
                 </div>
-                <p className="parrafo1">Anónimo is a short film filmed in Barcelona, Spain between January and February of 2020. Its central idea is the cruising, which is a sexual practice between two men, strangers, in places of the city. Anónimo tells the story of 3 main characters, their life, their routine and their sexuality.</p>
+                <p className="parrafo1 center">Anónimo is a short film filmed in Barcelona, Spain between January and February of 2020. Its central idea is the cruising, which is a sexual practice between two men, strangers, in places of the city. Anónimo tells the story of 3 main characters, their life, their routine and their sexuality.</p>
 
-                <div className="horizontal-space">
+                <div className="horizontal-space wrap">
                     {[
                         { t: "YEAR", a: "2019 - 2020" },
                         { t: "TIME FRAME", a: "9 months" },
                         { t: "MY ROLE", a: "Writer/ Film editing" },
                         { t: "TAGS", a: "Short, picture" },
                     ].map((v, k) => {
-                        return <div key={k}>
+                        return <div className="w3 vertical center" key={k}>
                             <h1 className="titulo2">{v.t}</h1>
-                            <h1 className="parrafo1">{v.a}</h1>
+                            <h1 className="parrafo1 center">{v.a}</h1>
                         </div>
                     })}
 
@@ -115,7 +115,7 @@ const Anonimo = () => {
 
                 </div>
 
-                <div style={{ marginTop: "150px" }} className="max-width padding-h">
+                <div style={{ marginTop: "150px" }} className="max-width padding-h aec-e aec-spin-in">
 
                     <p className="parrafo7" style={{ color: "#FFBC0A", textAlign: "center" }}>According with the title of the film and to respect the privacy, the characters do not use their names. They are anonymous. There are 3 main location, the beach, the mall and the forest.</p>
                 </div>
@@ -186,23 +186,23 @@ const Anonimo = () => {
                     <div className="Anonimo__perfil__creditos">
                         <h1 className="titulo1">CREDITS</h1>
                         <p className="parrafo1" style={{ color: "white" }}>
-                            <p><strong>"Written by:</strong> Michael Rojas and Manu Roma",</p>
-                            <p><strong>"Directed by:</strong> Manu Roma",</p>
-                            <p><strong>"Original idea:</strong> Manu Roma",</p>
-                            <p><strong>"Edition:</strong> Michael Rojas and Manu Roma",</p>
-                            <p><strong>"Sound edition:</strong> Michael Rojas",</p>
-                            <p><strong>"Phorography Director:</strong> Manu Roma and Michael Rojas",</p>
-                                "TecnoCampus 2020, Barcelona",
-                                <p><strong>"Running time:</strong> 19 minutes",</p>
-                            <p><strong>"Format:</strong> 1080p, .mp4.",</p>
-                            <p><strong>"Size:</strong> 16:9",</p>
+                            <p><strong>Written by:</strong> Michael Rojas and Manu Roma,</p>
+                            <p><strong>Directed by:</strong> Manu Roma,</p>
+                            <p><strong>Original idea:</strong> Manu Roma,</p>
+                            <p><strong>Edition:</strong> Michael Rojas and Manu Roma,</p>
+                            <p><strong>Sound edition:</strong> Michael Rojas,</p>
+                            <p><strong>Phorography Director:</strong> Manu Roma and Michael Rojas,</p>
+                                TecnoCampus 2020, Barcelona,
+                                <p><strong>Running time:</strong> 19 minutes,</p>
+                            <p><strong>Format:</strong> 1080p, .mp4.,</p>
+                            <p><strong>Size:</strong> 16:9,</p>
                         </p>
 
                     </div>
                 </div>
 
-                <div className="pos-img-2 padding-v">
-                    <img style={{ width: "60%", marginTop:"40px", marginBottom:"100px" }} src="/img/portafolio/anonimo/gracias.png" />
+                <div className="pos-img-2 padding-v aec-e aec-fade-in-bottom">
+                    <img style={{ width: "40%", marginTop: "40px", marginBottom: "100px" }} src="/img/portafolio/anonimo/gracias.png" />
                 </div>
 
 

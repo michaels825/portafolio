@@ -4,7 +4,16 @@ class AECAnimation {
 
     private scrollE?: HTMLElement;
     private elementos: HTMLElement[] = [];
-    private listAnimation = ["fade-in", "fade-up", "fade-down", "fade-left", "fade-right"];
+    private listAnimation = ["fade-in", "fade-up",
+        "fade-down",
+        "fade-left",
+        "fade-right",
+        "fade-in-right",
+        "fade-in-left",
+        "fade-in-bottom",
+        "spin-in",
+        "jump-in-right",
+        "jump-in-left", "pop-in-bottom"];
 
     constructor(scrollE?: HTMLElement, elementos?: HTMLElement[]) {
         if (scrollE !== undefined) {

@@ -56,27 +56,27 @@ const ECompras = () => {
     }, [onLoad])
 
     return <div className="ECompras">
-        <div className="ECompras__container">
+        <div className="ECompras__container aec-scroll">
             <div className="slider__p" style={{ backgroundImage: "url('/img/portafolio/e_compras/portada.png')" }}>
                 <h1 className="slider__p__titulo"><span className="slider__p__titulo__s">E</span>COMPRAS</h1>
                 <h3 className="slider__p__subtitulo">Ux / ui design</h3>
             </div>
 
-            <div className="max-width padding-v padding-h">
+            <div className="max-width padding-v padding-h aec-e aec-color-white">
                 <div >
                     <h1 className="titulo1">THE PROJECT</h1>
                 </div>
-                <p className="parrafo1">E-Compras is a virtual platform developed for Icesi University, located in Cali, Colombia. Its main function is the management of tangible and intangible resources necessary for the operation of the institution. a new platform, faster, easier, more efficient. The E-Compras team asked for help to the design department to solve a large number of issues on the current platform. It is a web page that is used by different people from the University, as well as secretaries, program directors and the E-Compras team.</p>
+                <p className="parrafo1 center">E-Compras is a virtual platform developed for Icesi University, located in Cali, Colombia. Its main function is the management of tangible and intangible resources necessary for the operation of the institution. a new platform, faster, easier, more efficient. The E-Compras team asked for help to the design department to solve a large number of issues on the current platform. It is a web page that is used by different people from the University, as well as secretaries, program directors and the E-Compras team.</p>
 
-                <div className="horizontal-space">
+                <div className="horizontal-space wrap">
                     {[
                         { t: "YEAR", a: "2020" },
                         { t: "TIME FRAME", a: "5 months" },
                         { t: "MY ROLE", a: "Ui team" }
                     ].map((v, k) => {
-                        return <div key={k}>
+                        return <div className="w3 vertical center" key={k}>
                             <h1 className="titulo2">{v.t}</h1>
-                            <h1 className="parrafo1">{v.a}</h1>
+                            <h1 className="parrafo1 center">{v.a}</h1>
                         </div>
                     })}
 
@@ -92,7 +92,7 @@ const ECompras = () => {
                 <p className="parrafo7 padding-h">Create a more friendly and optimal work platform for Icesi University employees, redesigning the graphic design and interaction with the E-compras platform.</p>
             </div>
 
-            <div className="horizontal center space-v">
+            <div className="horizontal center space-v aec-e aec-fade-in">
                 {[
                     "/img/portafolio/e_compras/foto_1.png",
                 ].map(((img, i) => {
@@ -103,7 +103,7 @@ const ECompras = () => {
             <div className="horizontal center">
                 <h1 className="titulo1">PEOPLE</h1>
             </div>
-            <div className="pos-img-2 padding-h">
+            <div className="pos-img-2 padding-h aec-e aec-fade-in">
                 <img style={{ width: "100%" }} src="/img/portafolio/e_compras/tarjetas.png" />
             </div>
             {/**
@@ -144,7 +144,7 @@ const ECompras = () => {
  */}
 
 
-            <div className="space-v">
+            <div className="space-v aec-e aec-fade-in">
                 <h1 className="titulo1">FIELDWORK</h1>
                 <div className="pos-img-2 padding-h">
                     {
@@ -161,24 +161,32 @@ const ECompras = () => {
                     }
                 </div>
 
-                <div className="pos-img-3 ">
+                <div className="pos-img-3 aec-e aec-fade-in">
                     <img className="padding-h space-v-min" src="/img/portafolio/e_compras/flujo.png" />
+                </div>
+                <div className="pos-img-3 aec-e aec-fade-in">
                     <img className="padding-h space-v-min" src="/img/portafolio/e_compras/colores.png" />
+                </div>
+                <div className="pos-img-3 aec-e aec-fade-in">
                     <img className="space-v-min" src="/img/portafolio/e_compras/pruebas_usuarios.png" />
+                </div>
+                <div className="pos-img-3 aec-e aec-fade-in">
                     <img className="padding-h space-v-min" style={{ width: "80%" }} src="/img/portafolio/e_compras/mockup_1.png" />
+                </div>
+                <div className="pos-img-3 aec-e aec-fade-in">
                     <p className="max-width parrafo7 padding-h">With the new E-compras the applicant has new functions that adapt to his needs: help information when creating a new application, saving frequent requests in Favorites and Home with a clear and orderly inbox.</p>
+                </div>
+                <div className="pos-img-3 aec-e aec-fade-in">
                     <div className="padding-h">
                         <img src="/img/portafolio/e_compras/mockup_2.png" />
 
                     </div>
                 </div>
 
-
-
-                <div className="pos-img-2 space-v-min">
-                    <img src="/img/portafolio/e_compras/end.png"  />
+                <div className="pos-img-2 space-v-min aec-e aec-fade-in-bottom">
+                    <img src="/img/portafolio/e_compras/end.png" />
                 </div>
-               
+
             </div>
 
 
