@@ -21,11 +21,10 @@ import BackgroundCreateJs from './styles/backgroundCreatejs';
 import Footer from '../Footer';
 import AppContext from './context/AppContext';
 import Preload from '../Preload';
+import Cursor from '../Cursor';
 
 
 const App = () => {
-
-
     return <BrowserRouter>
         <AppContextProvider>
             <Aplication />
@@ -56,37 +55,7 @@ const Aplication = () => {
         processing.initProcessing();
 
 
-        // refContainerHTML.appendChild(BackgroundCreateJs());
-
-        /*
-        let cursorHTML = document.querySelector(".Cursor") as HTMLDivElement;
-        let cursoresHTML = document.querySelectorAll(".Cursor_item") as NodeListOf<HTMLDivElement>;
-        let counter = 0;
-
-        console.log(cursoresHTML)
-        document.addEventListener("mousemove", (e) => {
-            var x = e.clientX;
-            var y = e.clientY;
-            counter++;
-
-            if (cursorHTML && counter % 3 === 0) {
-                cursorHTML.style.top = y + "px";
-                cursorHTML.style.left = x + "px";
-            }
-
-            /*
-            cursoresHTML.forEach((c, i) => {
-                if (counter % i === 0) {
-                    c.style.top = (y + i * 10) + "px";
-                    c.style.left = (x + i * 10) + "px";
-                } else {
-                    c.style.top = (y + i) + "px";
-                    c.style.left = (x + i) + "px";
-                }
-            })
-        })
-        
-        */
+      
 
     }, [])
 
@@ -97,8 +66,8 @@ const Aplication = () => {
             <Header />
             <Body />
             <Footer />
-          
         </div>
         <Preload />
+        <Cursor />
     </>
 }

@@ -56,6 +56,20 @@
     }
 }
 
+@keyframes logo_anim_salida {
+    0% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        display: none;
+        opacity: 0;
+        z-index: -100;
+    }
+}
+
 @keyframes logo_anim_back {
     0% {
         height: 0%;
@@ -74,14 +88,26 @@
     }
 }
 
-.anim_logo {
-    animation-name: logo_anim;
-    animation-iteration-count: 2;
+.anim_logo_salida {
+    animation-name: logo_anim_salida;
+    animation-iteration-count: 1;
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-play-state: running;
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     animation-delay: 1s;
+}
+
+.anim_logo {
+    .Preload__img__container {
+        animation-name: logo_anim;
+        animation-iteration-count: 2;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-play-state: running;
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        animation-delay: 1s;
+    }
 }
 
 .anim_logo_back {

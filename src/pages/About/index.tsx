@@ -3,6 +3,7 @@ import "./index.scss";
 
 import AppContext from '../../components/App/context/AppContext';
 import ScrollModule from '../../components/Scroll/Module';
+import Footer from '../../components/Footer/index';
 
 const About = () => {
 
@@ -49,43 +50,40 @@ const About = () => {
             </div>
             <div className="About__container__hacer">
                 <div className="About__container__hacer__container  max-width">
+                    <div className="About__container__hacer__container__titulo">
+                        What i do</div>
 
-                    <div className="horizontal" >
-                        <span className="marcador"></span>
-                        <div>
-                            <div className="About__container__hacer__container__titulo">
-                                What i do</div>
-                            <ul className="About__container__hacer__container__habilidades">
-
-                                <li><strong>Interaction</strong> design</li>
-                                <li><strong>UX/UI</strong> design</li>
-                                <li><strong>Design</strong> research</li>
-                                <li><strong>Art</strong> direction</li>
-                                <li><strong>Brand</strong>Brand design</li>
-                                <li><strong>User experience</strong> design</li>
-                                <li><strong>Creative</strong> strategy storytelling</li>
-                            </ul>
+                    <div className="About__container__hacer__container__habilidades">
+                        <div className="About__container__hacer__container__habilidades__tarjeta">
+                            <img className="About__container__hacer__container__habilidades__tarjeta__img" src="/img/icons/icon-about-1.png" alt="" />
+                            <p className="About__container__hacer__container__habilidades__tarjeta__p">User experience design</p>
                         </div>
-
+                        <div className="About__container__hacer__container__habilidades__tarjeta">
+                            <img className="About__container__hacer__container__habilidades__tarjeta__img" src="/img/icons/icon-about-2.png" alt="" />
+                            <p className="About__container__hacer__container__habilidades__tarjeta__p">Design research</p>
+                        </div>
+                        <div className="About__container__hacer__container__habilidades__tarjeta">
+                            <img className="About__container__hacer__container__habilidades__tarjeta__img" src="/img/icons/icon-about-3.png" alt="" />
+                            <p className="About__container__hacer__container__habilidades__tarjeta__p">Creative strategy storytelling</p>
+                        </div>
                     </div>
 
+
                 </div>
+
+
             </div>
-            <div className="About__container__herramientas">
-                <div className="About__container__herramientas__container max-width">
-                    <h1 className="About__container__herramientas__container__titulo">Tools</h1>
-                    <ul className="About__container__herramientas__container__lista">
-                        <li><img src="/img/icons/programs/after.png" alt="after" /></li>
-                        <li><img src="/img/icons/programs/figma.png" alt="figma" /></li>
-                        <li><img src="/img/icons/programs/illustrator.png" alt="illustrator" /></li>
-                        <li><img src="/img/icons/programs/indesign.png" alt="indesign" /></li>
-                        <li><img src="/img/icons/programs/math.png" alt="math" /></li>
-                        <li><img src="/img/icons/programs/photoshop.png" alt="photoshop" /></li>
-                        <li><img src="/img/icons/programs/premier.png" alt="premier" /></li>
-                        <li><img src="/img/icons/programs/xd.png" alt="xd" /></li>
-                    </ul>
+
+            <div className="About__container__line">
+                <div className="About__container__line__container max-width">
+                    <hr />
                 </div>
+
             </div>
+
+            <Footer position="normal" />
+
+
 
             <ScrollModule />
 

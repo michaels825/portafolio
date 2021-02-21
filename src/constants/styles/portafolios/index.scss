@@ -10,14 +10,33 @@
     background-size: cover;
     background-position: center;
 
+    @media (max-width: 768px) {
+        height: 70%;
+    }
+
+    @media (max-width: 480px) {
+        height: 50%;
+    }
+
     &__titulo {
         font-family: Qanelas Soft DEMO;
         font-style: normal;
         font-weight: 800;
         font-size: 108.138px;
         line-height: 136px;
+        text-align: center;
 
         color: #ffbc0a;
+
+        @media (max-width: 768px) {
+            font-size: 70px;
+            line-height: 70px;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 40px;
+            line-height: 40px;
+        }
 
         &__s {
             font-family: "Qanelas Soft DEMO";
@@ -34,8 +53,19 @@
         font-style: normal;
         font-weight: bold;
         font-size: 30.4138px;
-        line-height: 131%;
+        line-height: 100px;
         /* or 40px */
+        text-align: center;
+
+        @media (max-width: 768px) {
+            font-size: 25px;
+            line-height: 70px;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 15px;
+            line-height: 40px;
+        }
 
         color: #ffffff;
 
@@ -96,6 +126,17 @@
 
 .titulo2 {
     font-size: 16px;
+
+    @media (max-width: 1280px) {
+    }
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 10px;
+    }
 }
 
 .space-v-2 {
@@ -128,6 +169,20 @@
     line-height: 35px;
     text-align: justify;
     color: #4d4d4d;
+
+    &.center {
+        text-align: center;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 10px;
+        line-height: 19px;
+    }
 }
 .parrafo2 {
     padding-top: 20px;
@@ -235,6 +290,16 @@
 .space-v {
     margin-top: 150px !important;
     margin-bottom: 160px !important;
+
+    @media (max-width: 768px) {
+        margin-top: 100px !important;
+        margin-bottom: 110px !important;
+    }
+
+    @media (max-width: 480px) {
+        margin-top: 50px !important;
+        margin-bottom: 60px !important;
+    }
 }
 
 .radio {
@@ -296,12 +361,11 @@
         width: 40%;
         margin: 10px 0;
 
-    &:nth-child(even){
-        position: relative;
-        top: 95px;
-    } 
+        &:nth-child(even) {
+            position: relative;
+            top: 95px;
+        }
     }
-    
 }
 
 .pos-img-3 {
@@ -342,8 +406,33 @@
     background: white;
 }
 
+.wrap {
+    flex-wrap: wrap;
+
+    .w3 {
+        width: 25%;
+    }
+
+    @media (max-width: 480px) {
+        .w3 {
+            width: 50%;
+        }
+    }
+}
+
 .padding-h {
     padding: 0 200px;
+
+    @media (max-width: 1280px) {
+    }
+
+    @media (max-width: 768px) {
+        padding: 0 70px;
+    }
+
+    @media (max-width: 480px) {
+        padding: 0 10px;
+    }
 }
 
 .card {

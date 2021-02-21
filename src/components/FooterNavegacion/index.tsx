@@ -4,6 +4,7 @@ import { PortafolioPages } from '../../pages/Portafolio/index';
 import AppContext from '../App/context/AppContext';
 import Rlink from '../../constants/Routes/Rlink';
 import { PreloadProps } from '../App/context/AppContext';
+import Footer from '../Footer/index';
 
 const FooterNavegacion = () => {
 
@@ -51,7 +52,7 @@ const FooterNavegacion = () => {
 
     }, [])
 
-    return <div className="FooterNavegacion">
+    return <><div className="FooterNavegacion">
         {paginas.map((t, i) => {
             return <ItemNav key={i} t={t} i={i} />
 
@@ -60,6 +61,8 @@ const FooterNavegacion = () => {
 
 
     </div>
+        <Footer position="normal" />
+    </>
 }
 
 export default FooterNavegacion;

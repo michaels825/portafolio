@@ -12,9 +12,22 @@
     &__container {
         width: 100%;
         height: 100%;
-        overflow-y: scroll; 
+        overflow-y: scroll;
         &::-webkit-scrollbar {
-          //  display: none;
+            //  display: none;
+        }
+
+        &__line {
+            display: flex;
+            background: #080d4a;
+
+            &__container {
+                width: 100%;
+                hr {
+                    width: 90%;
+                    opacity: .5;
+                }
+            }
         }
 
         .marcador {
@@ -43,8 +56,6 @@
             justify-content: center;
             padding: 100px 0;
 
-            
-
             background-attachment: fixed;
 
             height: 100%;
@@ -61,7 +72,7 @@
                     color: transparent;
                     font-style: normal;
                     font-weight: 800;
-        
+
                     -webkit-text-stroke: 1px #ffffff;
                 }
             }
@@ -133,10 +144,11 @@
         &__hacer {
             background-color: #080d4a;
             padding: 50px 0;
+
             &__container {
                 &__titulo {
                     display: flex;
-                    justify-content: flex-start;
+                    justify-content: center;
                     align-items: center;
                     color: white;
 
@@ -144,15 +156,32 @@
                     font-style: normal;
                     font-weight: normal;
                     font-size: 45px;
-                    line-height: 131%;
+
                     /* or 59px */
+                    text-align: center;
+
+                    margin-bottom: 70px;
 
                     color: #ffffff;
                 }
-
                 &__habilidades {
-                    li {
-                        color: #fe374d;
+                    display: flex;
+                    justify-content: space-around;
+                    &__tarjeta {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        &__p {
+                            font-family: Coolvetica;
+                            font-style: normal;
+                            font-weight: 900;
+                            font-size: 20px;
+                            line-height: 24px;
+                            text-align: justify;
+
+                            color: #fe374d;
+                        }
                     }
                 }
             }
@@ -172,6 +201,7 @@
                     font-weight: normal;
                     font-size: 45px;
                     line-height: 131%;
+
                     /* or 59px */
 
                     color: #ffffff;

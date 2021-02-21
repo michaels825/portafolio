@@ -5,6 +5,12 @@
     width: 100%;
     height: 12%;
 
+    &__white{
+        .Header__container__navegacion__lista__item{
+            color: #fe374d;
+        }
+    }
+
     &.Header__over {
         position: absolute;
         z-index: 1;
@@ -30,6 +36,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            min-width: 200px;
+
+            background-image: "url('/img/logo/logo-white.png')";
+            background-size: contain;
 
             &:hover {
                 cursor: pointer;

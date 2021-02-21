@@ -6,6 +6,7 @@ import AwesomeSlider from "react-awesome-slider";
 import 'react-awesome-slider/dist/styles.css';
 import ScrollModule from "../../../../components/Scroll/Module";
 import FooterNavegacion from '../../../../components/FooterNavegacion/index';
+import Footer from '../../../../components/Footer/index';
 
 const YuAAtsaPiyaA = () => {
 
@@ -39,40 +40,40 @@ const YuAAtsaPiyaA = () => {
 
     return <div className="YuAAtsaPiyaA" >
 
-        <div className="YuAAtsaPiyaA__container aec-scroll">
-            <div className="slider__p" style={{ backgroundImage: "url('/img/portafolio/yu_a_atsa_piya_a/principal.png')" }}>
+        <div className="YuAAtsaPiyaA__container aec-scroll ">
+            <div className="slider__p aec-e aec-color-normal" style={{ backgroundImage: "url('/img/portafolio/yu_a_atsa_piya_a/principal.png')" }}>
                 <h1 className="slider__p__titulo">YU’ A ATSA PIYA’A</h1>
                 <h3 className="slider__p__subtitulo">Native language learning game</h3>
             </div>
 
-            <div className="max-width space-v padding-h">
+            <div className="max-width space-v padding-h aec-e aec-color-white">
                 <div>
-                    <h1 className="titulo1">THE PROJECT</h1>
+                    <h1 className="titulo2">THE PROJECT</h1>
                 </div>
                 <p className="parrafo1">Yu´ a Atsa Piya ´a, was a tool/game created for the Nasa indigenous community, located in La Primavera, Cauca, Colombia. This platform works as an interactive method for learning Nasa Yuwe (Native Indigenous language of Nasa’s community).</p>
                 <p className="parrafo1">The goal was to create a digital solution that satisfy language engagement/learning and digital literacy in kids between 9 - 12. The product was used in a rural environment with limited resources (No internet access and toaster technology).</p>
 
-                <div className="horizontal-space">
+                <div className="horizontal-space wrap">
                     {[
                         { t: "YEAR", a: "2017" },
                         { t: "TIME FRAME", a: "6 months" },
                         { t: "MY ROLE", a: "Ui team" },
                         { t: "TAGS", a: "Ux, ui, research" },
                     ].map((v, k) => {
-                        return <div key={k}>
+                        return <div className="w3 vertical center" key={k}>
                             <h1 className="titulo2">{v.t}</h1>
-                            <h1 className="parrafo1">{v.a}</h1>
+                            <h1 className="parrafo1 center">{v.a}</h1>
                         </div>
                     })}
 
                 </div>
             </div>
 
-            <div className="horizontal center aec-e aec-fade-in" style={{ backgroundColor: "#F16385" }}>
+            <div className="horizontal center aec-e aec-fade-in aec-color-normal" style={{ backgroundColor: "#F16385" }}>
                 <img src="/img/portafolio/yu_a_atsa_piya_a/juego.png" alt="" />
             </div>
 
-            <div className="max-width horizontal space-v">
+            <div className="max-width horizontal space-v aec-e aec-color-white">
                 <div>
                     <img src="/img/portafolio/yu_a_atsa_piya_a/nino.png" alt="" />
                 </div>
@@ -138,14 +139,14 @@ const YuAAtsaPiyaA = () => {
 
             <div className="max-width pos-img-4">
                 <img style={{ alignSelf: "auto" }} src="/img/portafolio/yu_a_atsa_piya_a/wacom-2.png" alt="" />
-                <img style={{ alignSelf: "flex-end" }} src="/img/portafolio/yu_a_atsa_piya_a/wacom-2.png" alt="" />
-                <img style={{ alignSelf: "center" }} src="/img/portafolio/yu_a_atsa_piya_a/wacom-2.png" alt="" />
+                <img style={{ alignSelf: "flex-end" }} src="/img/portafolio/yu_a_atsa_piya_a/wacom-4.png" alt="" />
+                <img style={{ alignSelf: "center" }} src="/img/portafolio/yu_a_atsa_piya_a/wacom-3.png" alt="" />
             </div>
 
 
 
             <div className="max-width space-v-min padding-h">
-                <h1 className="titulo1">HOW IT WORKS</h1>
+                <h1 className="titulo2">HOW IT WORKS</h1>
                 <p className="parrafo2">
                     The product needs to follow the colors, the language, the social hierarchy, the rules and the meaning of the community. This is a powerful metaphor, connecting the digital world with the kids reality itself. It’s really gorgeous to see how the kids look at their teacher in a tiny computer, they smile, they laugh, they enjoy the interaction with something familiar, something that really exists. We’re talking about kids, we need to think about ways to create engagement.
 </p>
@@ -195,9 +196,12 @@ const YuAAtsaPiyaA = () => {
             <div className="horizontal center aec-e aec-fade-in">
                 <img width="50%" src="/img/portafolio/yu_a_atsa_piya_a/gracias.png" alt="" />
             </div>
+
+           
             <ScrollModule />
 
             <FooterNavegacion />
+            
         </div>
 
     </div>

@@ -1,38 +1,100 @@
 .Footer {
-    position: fixed;
-    z-index: 100;
-    bottom: 20px;
-    width: 100%;
+    &.Footer__over {
+        position: fixed;
+        z-index: 100;
+        bottom: 20px;
+        width: 100%;
+    }
+
+    
     display: flex;
     justify-content: center;
 
-    margin: 0 20px;
+    padding: 0 20px;
+
+    &.Footer__normal{
+        padding: 50px 20px;
+        background: #080D4A;
+    }
 
     &__container {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+
         width: 100%;
         max-width: 1280px;
 
-        &__name {
-            p {
-                font-style: normal;
-                font-weight: normal;
-                font-size: 0.8em;
-                line-height: 131%;
-                /* identical to box height, or 20px */
+        &__contact {
+            padding-bottom: 50px;
+            &__container {
+                &__title {
+                    &__lest {
+                        color: #ffbc0a;
+                        font-size: 3em;
+                        font-family: "Qanelas Soft DEMO";
+                        font-style: normal;
+                        font-weight: 800;
 
-                letter-spacing: 0.11em;
-                color: white;
+                        &__talk {
+                            font-family: "Qanelas Soft DEMO";
+                            color: transparent;
+                            font-style: normal;
+                            font-weight: 800;
+
+                            -webkit-text-stroke: 1px #ffffff;
+                        }
+                    }
+                }
+
+                &__correo {
+                    display: flex;
+                    align-items: center;
+
+                    h2 {
+                        font-family: Coolvetica;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 23.3788px;
+                        margin: 0;
+                        /* or 31px */
+
+                        color: #ffffff;
+
+                        margin-left: 20px;
+                    }
+
+                    img {
+                        width: 20px;
+                    }
+                }
             }
         }
-        &__redes {
-            img {
-                margin: 0 15px;
 
-                &:hover {
-                    cursor: pointer;
-                    opacity: 0.5;
+        &__page {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            &__name {
+                p {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 0.8em;
+                    line-height: 131%;
+                    /* identical to box height, or 20px */
+
+                    letter-spacing: 0.11em;
+                    color: white;
+                }
+            }
+            &__redes {
+                img {
+                    margin: 0 15px;
+
+                    &:hover {
+                        cursor: pointer;
+                        opacity: 0.5;
+                    }
                 }
             }
         }

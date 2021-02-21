@@ -25,19 +25,17 @@ const Preload = () => {
 
     useEffect(() => {
         const refBackgroundHTML = refBackground.current as HTMLDivElement;
+        const refLogoHTML = refLogo.current as HTMLDivElement;
 
-        console.log("refBackgroundHTML,", refBackgroundHTML)
 
         const animBackground = (e: Event) => {
-            // console.log("EVENTO FINALIZADO")
+
             const target = e.target as HTMLDivElement;
 
 
             if (first === true) {
                 setFirst(false)
-                //alert("false")
             }
-
 
             if (target.className.includes("entrada")) {
                 //Entro a la animacion
@@ -49,25 +47,11 @@ const Preload = () => {
 
             if (target.className.includes("salida")) {
                 //Fin de la animacion
-
             }
         }
 
-        refBackgroundHTML.addEventListener("animationend", animBackground);
 
-        return () => {
-            refBackgroundHTML.removeEventListener("animationend", animBackground);
-        }
-
-
-    }, [preload])
-
-
-
-    useEffect(() => {
-        const refLogoHTML = refLogo.current as HTMLDivElement;
         const animAction = () => {
-            refLogoHTML.style.display = "none";
 
             let preloadTemp = Object.assign({}, preload) as PreloadProps;
             preloadTemp.pageLink = false;
@@ -76,38 +60,40 @@ const Preload = () => {
             setPreload(preloadTemp);
 
         }
+
+
+        refBackgroundHTML.addEventListener("animationend", animBackground);
         refLogoHTML.addEventListener("animationend", animAction)
 
         return () => {
+            refBackgroundHTML.removeEventListener("animationend", animBackground);
             refLogoHTML.removeEventListener("animationend", animAction)
         }
-    }, [])
+
+
+    }, [preload])
+
+
 
     useEffect(() => {
 
 
-        /*
-        setTimeout(() => {
-            let color = preload.color;
-            let state = false;
 
-            setPreload({
-                color,
-                state
-            })
+        return () => {
 
-        }, 2000);
-        */
+        }
+    }, [])
 
-    }, [preload])
 
     const classAnim = (preload.state === true ? (first === false ? " anim_logo_back entrada" : "") : " anim_logo_back_salida")
+
+    const classAnimLogo = (preload.state === true ? " anim_logo" : " anim_logo_salida")
     return <>
         <div ref={refBackground} className={"Preload" +
             classAnim
         } style={{ background: colorsPreload[preload.color] }}></div>
-        <div ref={refLogo} className="Preload__img">
-            <div className="Preload__img__container anim_logo">
+        <div ref={refLogo} className={"Preload__img" + classAnimLogo}>
+            <div className="Preload__img__container">
                 <img src="/img/logo/logo.svg" alt="" />
             </div>
         </div>

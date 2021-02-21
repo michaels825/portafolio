@@ -48,12 +48,18 @@
                         font-family: Coolvetica;
                         font-style: normal;
                         font-weight: bold;
-                        font-size: 27px;
+                        font-size: 23px;
                         letter-spacing: 0.105em;
                         line-height: 0;
                         /* or 39px */
 
                         color: #ffffff;
+                    }
+                }
+
+                &__phone {
+                    img{
+                        height: 30px;
                     }
                 }
             }

@@ -16,13 +16,7 @@ import ECompras from '../../pages/Portafolio/proyectos/ECompras/index';
 import ThePizzaProject from '../../pages/Portafolio/proyectos/ThePizzaProject/index';
 import YuAAtsaPiyaA from '../../pages/Portafolio/proyectos/YuAAtsaPiyaA/index';
 
-
-
-
-
 const Body = withRouter(({ location }) => {
-
-
 
     const { useStyle, usePageLink } = AppContext.Consumer();
     const [style] = useStyle();
@@ -33,7 +27,7 @@ const Body = withRouter(({ location }) => {
     }, [])
 
     useEffect(() => {
-       // AOS.refresh();
+ 
     }, [pageLink])
 
     return (

@@ -42,7 +42,7 @@ class AECAnimation {
     }
 
     private scrollEvent(ev?: any) {
-        
+
         if (this.scrollE) {
             let pantallaHeight = this.scrollE.clientHeight;
             let totalScroll = this.scrollE.scrollHeight - this.scrollE.clientHeight;
@@ -66,13 +66,26 @@ class AECAnimation {
                     })
                 }
 
-                if (currentScrollTop > (e.offsetTop - (pantallaHeight  * .7)) && currentScrollTop < (e.offsetTop + e.clientHeight)) {
+                if (currentScrollTop > (e.offsetTop - (pantallaHeight)) && currentScrollTop < (e.offsetTop + e.clientHeight)) {
                     //Elemento visible en entrada
                     this.listAnimation.forEach(animN => {
                         if (e.className.includes("aec-" + animN)) {
                             e.classList.add("aec-" + animN + "-into-view");
                         }
                     })
+
+
+                    if (e.className.includes("aec-color-white")) {
+                        var header = document.querySelector(".Header");
+                        if (header) {
+                            header.classList.add("Header__white");
+                        }
+                    } else if (e.className.includes("aec-color-normal")) {
+                        var header = document.querySelector(".Header");
+                        if (header) {
+                            header.classList.remove("Header__white");
+                        }
+                    }
 
                 }
             })
